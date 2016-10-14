@@ -8,7 +8,7 @@ host = {
 
 function button_init()
   gpio.trig(BUTTON, "down", button_callback)
-  gpio.mode(BUTTON, gpio.INT)
+  gpio.mode(BUTTON, gpio.INT, gpio.PULLUP)
 end
 
 function rimshot ()
